@@ -40,9 +40,9 @@ function findTheBanana(L) {
 findTheBanana(L1);
 findTheBanana(L2);
 
-function findTheBanana(fruit) {
+function findTheBanana(fruit, index) {
     if (fruit === "Banana") {
-        alert("We found a banana in the first array");
+        alert("We found a banana at " + index);
     }
 }
 
