@@ -52,7 +52,8 @@ L2.forEach(findTheBanana);
 function greetingFunc(){
     const d = new Date();
     const h = d.getHours();
-    if (window.location.href.includes("index.html")) {
+    // if (window.location.href.includes("index.html"))
+    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
         const E = document.getElementById("greeting");
     
         if ((0 < h && h < 5) || (20 < h && h < 24)) {
