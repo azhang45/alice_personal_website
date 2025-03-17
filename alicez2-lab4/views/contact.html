@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alice Zhang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Alice Zhang professional website">
+    <title>Alice Zhang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Alice Zhang</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact me</a>
+            <a href="fun.html">For fun</a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Your name (required):</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Your email (required):</label>
+            <input type="text" id="email" name="email" required><br>
+            <label for="comment">Your comment (required):</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <input type="submit" value="SEND" onclick="validate()">
+        </form>
+        <h3 id="validation-msg"></h3>
+        <br>
+        <h3>Contact Method Description</h3>
+        <table border="1">
+            <tr>
+                <th>Contact Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>alicez2@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/alice-zhang-994145247/">linkedin.com/in/alice-zhang-994145247/</a></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <footer>
+        <p id="copyYear">&copy; designed and coded by Alice Zhang</p>
+    </footer>
+    
+</body>
+</html>
